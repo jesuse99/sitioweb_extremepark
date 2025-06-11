@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Entradas - ExtremePark</title>
     <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
@@ -26,13 +27,94 @@
             </ul>
         </nav>
     </header>
-    <main></main>
+
+    <main>
+
+
+        <div class="grid grid-cols-5 grid-rows-5 gap-4 h-screen w-full p-4">
+
+            <div class="col-span-2 row-span-3">1
+                <label for="date">Seleccione una fecha</label>
+                <input type="hidden" id="fechaEntrada" name="fechaEntrada">
+                <div id="datepicker-inline" inline-datepicker data-date="02/25/2024"></div>
+            </div>
+
+            <div class="col-span-2 row-span-2 col-start-1 row-start-4">2
+                <form class="max-w-sm mx-auto">
+                    <label for="number-input" class="block mb-2 text-sm font-medium text-gray-900 text-black">Ingrese
+                        DNI: </label>
+                    <input type="number" id="number-input" aria-describedby="helper-text-explanation"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                        placeholder="123201320" required />
+
+                    <label for="number-input" class="block mb-2 text-sm font-medium text-gray-900 text-black">Ingrese
+                        nombre: </label>
+                    <input type="text" id="number-input" aria-describedby="helper-text-explanation"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                        placeholder="Juan Perez" required />
+
+                    <label for="number-input" class="block mb-2 text-sm font-medium text-gray-900 text-black">Ingrese
+                        edad: </label>
+                    <input type="text" id="number-input" aria-describedby="helper-text-explanation"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                        placeholder="24" required />
+                    <button type="submit" class="bg-blue-300 text-white p-2">Agregar</button>
+                </form>
+            </div>
+
+            <div class="col-span-3 row-span-4 col-start-3 row-start-1">3
+                <div class="flex flex-col gap-4">
+                    <div class="flex bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 p-2">
+                        <div class="flex flex-col">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Entrada #001</h5>
+                            <p class="font-normal text-gray-700">
+                                <span class="font-semibold">Fecha:</span> 15 de junio de 2025<br>
+                                <span class="font-semibold">Visitante:</span> María Pérez<br>
+                                <span class="font-semibold">Tipo:</span> General
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 p-2">
+                        <div class="flex flex-col">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Entrada #001</h5>
+                            <p class="font-normal text-gray-700">
+                                <span class="font-semibold">Fecha:</span> 15 de junio de 2025<br>
+                                <span class="font-semibold">Visitante:</span> María Pérez<br>
+                                <span class="font-semibold">Tipo:</span> General
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 p-2">
+                        <div class="flex flex-col">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Entrada #001</h5>
+                            <p class="font-normal text-gray-700">
+                                <span class="font-semibold">Fecha:</span> 15 de junio de 2025<br>
+                                <span class="font-semibold">Visitante:</span> María Pérez<br>
+                                <span class="font-semibold">Tipo:</span> General
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-span-3 col-start-3 row-start-5">4
+                <h5>Resumen de la compra</h5>
+
+                <p>Subtotal: 13000</p>
+                <p>Total: 13000</p>
+            </div>
+        </div>
+        </div>
+
+    </main>
+
     <footer class="flex justify-between p-3 bg-orange-600 text-white items-center">
         <h2 class="text-lg font-semibold">UADE</h2>
         <p>Proyecto educativo parque tematico</p>
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 </body>
 
 </html>
