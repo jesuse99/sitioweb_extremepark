@@ -13,17 +13,32 @@
 <body class="flex flex-col h-screen justify-between">
 
     <header>
-        <nav class="flex text-center p-4 text-black items-center justify-between">
-            <a class="" href="index.html">
-                <img src="img/extremepark.svg" alt="Logo ExtremePark" class="w-30">
-            </a>
-            <ul class="flex gap-10 mt-2">
-                <li><a class="text-xl" href="index.html">Inicio</a></li>
-                <li><a class="text-xl" href="atracciones.html">Atracciones</a></li>
-                <li><a class="text-xl" href="servicios.html">Servicios</a></li>
-                <li><a class="text-xl text-orange-600 border-b-2 border-orange-600 pb-2 p-4"
-                        href="entradas.html">Entradas</a></li>
-            </ul>
+        <nav>
+            <div class="flex text-center p-4 text-black items-center justify-between">
+                <a href="index.html">
+                    <img src="img/extremepark.svg" alt="Logo ExtremePark" class="w-30">
+                </a>
+                <div class="flex justify-end md:hidden">
+                    <button type="button" id="button-menu">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+                <ul class="hidden md:flex gap-10 mt-2">
+                    <li><a class="text-xl" href="index.html">Inicio</a></li>
+                    <li><a class="text-xl" href="atracciones.html">Atracciones</a></li>
+                    <li><a class="text-xl" href="servicios.html">Servicios</a></li>
+                    <li><a class="text-xl text-orange-600 border-b-2 border-orange-600 pb-2 p-4"
+                            href="entradas.html">Entradas</a></li>
+                </ul>
+            </div>
+            <div class="hidden flex flex-col justify-center text-center m-4 list-menu">
+                <ul class="flex flex-col gap-4">
+                    <li><a class="text-xl" href="index.html">Inicio</a></li>
+                    <li><a class="text-xl" href="atracciones.html">Atracciones</a></li>
+                    <li><a class="text-xl" href="servicios.html">Servicios</a></li>
+                    <li><a class="text-xl text-orange-600 border-b-2 border-orange-600 pb-2 p-4" href="entradas.html">Entradas</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 

@@ -5,6 +5,16 @@ const cantAdulto = document.querySelector(".cant-adulto");
 const cantNino = document.querySelector(".cant-nino");
 const cantJubilado = document.querySelector(".cant-jubilado");
 
+const listMenu = document.querySelector(".list-menu");
+const buttonMenu = document.getElementById("button-menu");
+buttonMenu.addEventListener('click', function() {
+    if (listMenu.classList.contains("hidden")) {
+        listMenu.classList.remove("hidden");
+    } else {
+        listMenu.classList.add("hidden");
+    }
+});
+
 const diaFecha = document.querySelectorAll(".cursor-pointer");
 const hoyFecha = new Date().getDate();
 

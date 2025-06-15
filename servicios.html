@@ -7,27 +7,41 @@
     <title>Servicios - ExtremePark</title>
     <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/2183401f2c.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="flex flex-col h-screen justify-between">
 
     <header>
-        <nav class="flex flex-col text-center p-4 bg-orange-600 text-white items-center">
-            <a class="flex flex-col items-center" href="index.html">
-                <img src="img/extremepark.png" alt="Logo ExtremePark" class="w-10">
-                <h1 class="text-2xl font-bold">ExtremePark</h1>
-            </a>
-            <ul class="flex gap-4 mt-2">
-                <li><a class="text-xl" href="index.html">Inicio</a></li>
-                <li><a class="text-xl" href="atracciones.html">Atracciones</a></li>
-                <li><a class="text-xl" href="servicios.html">Servicios</a></li>
-                <li><a class="text-xl" href="promociones.html">Promociones</a></li>
-                <li><a class="text-xl" href="entradas.html">Entradas</a></li>
-            </ul>
+        <nav>
+            <div class="flex text-center p-4 text-black items-center justify-between">
+                <a href="index.html">
+                    <img src="img/extremepark.svg" alt="Logo ExtremePark" class="w-30">
+                </a>
+                <div class="flex justify-end md:hidden">
+                    <button type="button" id="button-menu">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+                <ul class="hidden md:flex gap-10 mt-2">
+                    <li><a class="text-xl" href="index.html">Inicio</a></li>
+                    <li><a class="text-xl" href="atracciones.html">Atracciones</a></li>
+                    <li><a class="text-xl text-orange-600 border-b-2 border-orange-600 pb-2 p-4" href="servicios.html">Servicios</a></li>
+                    <li><a class="text-xl" href="entradas.html">Entradas</a></li>
+                </ul>
+            </div>
+            <div class="hidden flex flex-col justify-center text-center m-4 list-menu">
+                <ul class="flex flex-col gap-4">
+                    <li><a class="text-xl" href="index.html">Inicio</a></li>
+                    <li><a class="text-xl" href="atracciones.html">Atracciones</a></li>
+                    <li><a class="text-xl text-orange-600 border-b-2 border-orange-600 pb-2 p-4" href="servicios.html">Servicios</a></li>
+                    <li><a class="text-xl" href="entradas.html">Entradas</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
-    <main>
 
+    <main>
         <section class="py-16 mb-5">
             <div class="max-w-7xl mx-auto px-4 text-center">
               <h2 class="text-3xl font-bold text-gray-800 mb-12">Nuestros servicios</h2>
@@ -113,12 +127,20 @@
         <section>
             <img class="w-full" src="img/mapa_parque.jpg" alt="atracciones parque tematico">
         </section>
-            
-
     </main>
-    <footer class="flex justify-between p-3 bg-orange-600 text-white items-center">
-        <h2 class="text-lg font-semibold">UADE</h2>
-        <p>Proyecto educativo parque tematico</p>
+    
+    <footer class="flex flex-wrap justify-start gap-10 items-center border-t border-black-800 p-8 m-4 mt-20 md:gap-75">
+        <div class="flex flex-col gap-4">
+            <h5 class="text-lg font-bold">Contactenos</h5>
+            <p>Si te quedo alguna consulta no dudes en escribirnos!</p>
+        </div>
+        <form class="flex flex-col gap-4">
+            <input type="email" class="border-b border-gray-800 w-100" placeholder="Email" required>
+            <button type="submit" class="border border-gray-800 w-20 p-1">Enviar</button>
+            <!-- <i class="fa-brands fa-facebook"></i> -->
+        </form>
+        <!-- <h2 class="text-lg font-semibold">UADE</h2>
+        <p>Proyecto educativo parque tematico</p> -->
     </footer>
 
     <script src="js/main.js"></script>
