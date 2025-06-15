@@ -28,12 +28,13 @@
     </header>
 
     <main>
-
         <div class="flex justify-center items-center p-4">
-            <h1 class="text-3xl">Tickets</h1>
+            <!-- <h1 class="text-3xl">Tickets</h1> -->
+            <img src="img/tickets-desktop.png" srcset="img/tickets-movil.png 800w, img/tickets-desktop.png 2600w"
+                sizes="(max-width: 600px) w-100, w-100" alt="titulo entradas" class="w-100 md:w-full">
         </div>
 
-        <section class="flex gap-4 justify-center items-center p-2">
+        <section class="flex flex-wrap gap-4 justify-center items-center p-2">
             <div class="w-100">
                 <div class="bg-white rounded-lg shadow-xl p-6 w-full max-w-lg">
                     <div class="flex justify-between items-center mb-6">
@@ -164,7 +165,7 @@
                     <p class="total-ticket text-xl font-semibold">$ 14000</p>
                 </div>
 
-                <div class="flex justify-end mt-4">
+                <div class="flex justify-center mt-4 md:justify-end">
                     <!-- <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
                         data-preference-id="1273324264-f92cada3-65b7-4a53-a55b-af7cfb015eb6" data-source="button">
                         </script> -->
@@ -175,7 +176,7 @@
         </section>
     </main>
 
-    <footer class="flex justify-start gap-75 items-center border-t border-black-800 p-8 m-4">
+    <footer class="flex flex-wrap justify-start gap-10 items-center border-t border-black-800 p-8 m-4 mt-20 md:gap-75">
         <div class="flex flex-col gap-4">
             <h5 class="text-lg font-bold">Contactenos</h5>
             <p>Si te quedo alguna consulta no dudes en escribirnos!</p>
