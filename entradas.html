@@ -7,32 +7,34 @@
     <title>Entradas - ExtremePark</title>
     <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/2183401f2c.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="flex flex-col h-screen justify-between">
 
     <header>
-        <nav class="flex flex-col text-center p-4 bg-orange-600 text-white items-center">
-            <a class="flex flex-col items-center" href="index.html">
-                <img src="img/extremepark.png" alt="Logo ExtremePark" class="w-10">
-                <h1 class="text-2xl font-bold">ExtremePark</h1>
+        <nav class="flex text-center p-4 text-black items-center justify-between">
+            <a class="" href="index.html">
+                <img src="img/extremepark.svg" alt="Logo ExtremePark" class="w-30">
             </a>
-            <ul class="flex gap-4 mt-2">
+            <ul class="flex gap-10 mt-2">
                 <li><a class="text-xl" href="index.html">Inicio</a></li>
                 <li><a class="text-xl" href="atracciones.html">Atracciones</a></li>
                 <li><a class="text-xl" href="servicios.html">Servicios</a></li>
-                <li><a class="text-xl" href="promociones.html">Promociones</a></li>
-                <li><a class="text-xl" href="entradas.html">Entradas</a></li>
+                <li><a class="text-xl text-orange-600 border-b-2 border-orange-600 pb-2 p-4"
+                        href="entradas.html">Entradas</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
 
-        <div class="grid grid-cols-4 grid-rows-4 gap-4 h-auto w-full p-4">
+        <div class="flex justify-center items-center p-4">
+            <h1 class="text-3xl">Tickets</h1>
+        </div>
 
-            <div class="col-span-2 row-span-3 bg-blue-100 p-3">
-                <h2 class="text-2xl mb-3">Seleccione una fecha</h2>
+        <section class="flex gap-4 justify-center items-center p-2">
+            <div class="w-100">
                 <div class="bg-white rounded-lg shadow-xl p-6 w-full max-w-lg">
                     <div class="flex justify-between items-center mb-6">
                         <button class="text-gray-600 hover:text-gray-800 focus:outline-none">
@@ -112,93 +114,83 @@
                 </div>
             </div>
 
-            <div class="col-span-2 col-start-1 row-start-4 bg-blue-100 p-3">
-                <h2 class="text-2xl mb-3">Datos del solicitante</h2>
-            </div>
+            <div class="w-100">
+                <ul class="flex flex-col gap-10 list-none ">
+                    <li>
+                        <div class="flex justify-between border-b-2 border-black pb-2 p-4">
+                            <h5 class="text-lg">Pasaporte adulto</h5>
+                            <div class="flex gap-4">
+                                <button type="button" id="button-minus">
+                                    <i class="fa-solid fa-minus"></i>
+                                </button>
+                                <span class="cant-adulto">1</span>
+                                <button type="button" id="button-plus">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex justify-between border-b-2 border-black pb-2 p-4">
+                            <h5 class="text-lg">Pasaporte Niño</h5>
+                            <div class="flex gap-4">
+                                <button type="button" id="button-minus">
+                                    <i class="fa-solid fa-minus"></i>
+                                </button>
+                                <span class="cant-nino">1</span>
+                                <button type="button" id="button-plus">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex justify-between border-b-2 border-black pb-2 p-4">
+                            <h5 class="text-lg">Pasaporte Jubilado</h5>
+                            <div class="flex gap-4">
+                                <button type="button" id="button-minus">
+                                    <i class="fa-solid fa-minus"></i>
+                                </button>
+                                <span class="cant-jubilado">1</span>
+                                <button type="button" id="button-plus">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
 
-            <div class="col-span-2 row-span-3 col-start-3 row-start-1 bg-blue-100 overflow-auto h-full p-3">
-                <h2 class="text-2xl mb-3">Seleccione tipo de entrada</h2>
-                <div class="flex flex-col gap-2">
-                    <div class="flex bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 p-2">
-                        <div class="flex flex-col">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Entrada #001</h5>
-                            <p class="font-normal text-gray-700">
-                                <span class="font-semibold">Tipo:</span> General
-                            </p>
-                        </div>
-                    </div>
-                    <div class="flex bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 p-2">
-                        <div class="flex flex-col">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Entrada #001</h5>
-                            <p class="font-normal text-gray-700">
-                                <span class="font-semibold">Tipo:</span> General
-                            </p>
-                        </div>
-                    </div>
-                    <div class="flex bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 p-2">
-                        <div class="flex flex-col">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Entrada #001</h5>
-                            <p class="font-normal text-gray-700">
-                                <span class="font-semibold">Tipo:</span> General
-                            </p>
-                        </div>
-                    </div>
-                    <div class="flex bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 p-2">
-                        <div class="flex flex-col">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Entrada #001</h5>
-                            <p class="font-normal text-gray-700">
-                                <span class="font-semibold">Tipo:</span> General
-                            </p>
-                        </div>
-                    </div>
-                    <div class="flex bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 p-2">
-                        <div class="flex flex-col">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Entrada #001</h5>
-                            <p class="font-normal text-gray-700">
-                                <span class="font-semibold">Tipo:</span> General
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-span-2 col-start-3 row-start-4 bg-blue-100 p-3">
-                <h2 class="text-3xl mb-3">Resumen de la compra</h2>
-
-                <div class="flex flex-col gap-1">
-                <div class="flex justify-between text-lg">
-                    <p><strong>Subtotal</strong></p>
-                    <p>$12000</p>
-                </div>
-                <div class="flex justify-between text-lg">
-                    <p><strong>Descuento</strong></p>
-                    <p>$1000</p>
-                </div>
-                <div class="flex justify-between text-lg">
+                <div class="flex justify-between text-lg mt-8">
                     <p><strong>Total</strong></p>
-                    <p>$11000</p>
-                </div>
+                    <p class="total-ticket"><strong>$11000</strong></p>
                 </div>
 
-                <div class="flex justify-end mt-2">
-                    <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+                <div class="flex justify-end mt-4">
+                    <!-- <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
                         data-preference-id="1273324264-f92cada3-65b7-4a53-a55b-af7cfb015eb6" data-source="button">
-                    </script>
-                    <a class="p-2 bg-blue-500 text-white rounded-md checkout-button ms-2" href="https://buy.stripe.com/test_bJe00l3ML4GG0Jyaq09AA03" target="_blank">Pagar ahora</a>
+                        </script> -->
+                    <a class="p-2 bg-violet-600 text-white rounded-md checkout-button ms-2"
+                        href="https://buy.stripe.com/test_bJe00l3ML4GG0Jyaq09AA03" target="_blank">Comprar</a>
                 </div>
             </div>
-        </div>
-        </div>
-
+        </section>
     </main>
 
-    <footer class="flex justify-between p-3 bg-orange-600 text-white items-center">
-        <h2 class="text-lg font-semibold">UADE</h2>
-        <p>Proyecto educativo parque tematico</p>
+    <footer class="flex justify-start gap-75 items-center border-t border-black-800 p-8 m-4">
+        <div class="flex flex-col gap-4">
+            <h5 class="text-lg font-bold">Contactenos</h5>
+            <p>Si te quedo alguna consulta no dudes en escribirnos!</p>
+        </div>
+        <form class="flex flex-col gap-4">
+            <input type="email" class="border-b border-gray-800 w-100" placeholder="Email" required>
+            <button type="submit" class="border border-gray-800 w-20 p-1">Enviar</button>
+            <!-- <i class="fa-brands fa-facebook"></i> -->
+        </form>
+        <!-- <h2 class="text-lg font-semibold">UADE</h2>
+        <p>Proyecto educativo parque tematico</p> -->
     </footer>
 
     <script src="js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 </body>
 
 </html>
