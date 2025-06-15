@@ -83,8 +83,7 @@
                         <div class="py-2 rounded-md hover:bg-blue-100 cursor-pointer">9</div>
                         <div class="py-2 rounded-md hover:bg-blue-100 cursor-pointer">10</div>
                         <div class="py-2 rounded-md hover:bg-blue-100 cursor-pointer">11</div>
-                        <div class="py-2 rounded-md hover:bg-blue-100 cursor-pointer bg-blue-500 text-white font-bold">
-                            12</div>
+                        <div class="py-2 rounded-md hover:bg-blue-100 cursor-pointer">12</div>
                         <div class="py-2 rounded-md hover:bg-blue-100 cursor-pointer">13</div>
                         <div class="py-2 rounded-md hover:bg-blue-100 cursor-pointer">14</div>
                         <div class="py-2 rounded-md hover:bg-blue-100 cursor-pointer">15</div>
@@ -120,11 +119,11 @@
                         <div class="flex justify-between border-b-2 border-black pb-2 p-4">
                             <h5 class="text-lg">Pasaporte adulto</h5>
                             <div class="flex gap-4">
-                                <button type="button" id="button-minus">
+                                <button type="button" id="button-minus" onclick="decA()">
                                     <i class="fa-solid fa-minus"></i>
                                 </button>
                                 <span class="cant-adulto">1</span>
-                                <button type="button" id="button-plus">
+                                <button type="button" id="button-plus" onclick="incA()">
                                     <i class="fa-solid fa-plus"></i>
                                 </button>
                             </div>
@@ -134,11 +133,11 @@
                         <div class="flex justify-between border-b-2 border-black pb-2 p-4">
                             <h5 class="text-lg">Pasaporte Niño</h5>
                             <div class="flex gap-4">
-                                <button type="button" id="button-minus">
+                                <button type="button" id="button-minus" onclick="decN()">
                                     <i class="fa-solid fa-minus"></i>
                                 </button>
                                 <span class="cant-nino">1</span>
-                                <button type="button" id="button-plus">
+                                <button type="button" id="button-plus" onclick="incN()">
                                     <i class="fa-solid fa-plus"></i>
                                 </button>
                             </div>
@@ -148,11 +147,11 @@
                         <div class="flex justify-between border-b-2 border-black pb-2 p-4">
                             <h5 class="text-lg">Pasaporte Jubilado</h5>
                             <div class="flex gap-4">
-                                <button type="button" id="button-minus">
+                                <button type="button" id="button-minus" onclick="decJ()">
                                     <i class="fa-solid fa-minus"></i>
                                 </button>
                                 <span class="cant-jubilado">1</span>
-                                <button type="button" id="button-plus">
+                                <button type="button" id="button-plus" onclick="incJ()">
                                     <i class="fa-solid fa-plus"></i>
                                 </button>
                             </div>
@@ -161,8 +160,8 @@
                 </ul>
 
                 <div class="flex justify-between text-lg mt-8">
-                    <p><strong>Total</strong></p>
-                    <p class="total-ticket"><strong>$11000</strong></p>
+                    <p class="text-xl font-semibold">Total</p>
+                    <p class="total-ticket text-xl font-semibold">$ 14000</p>
                 </div>
 
                 <div class="flex justify-end mt-4">
