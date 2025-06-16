@@ -1,63 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inicio - ExtremePark</title>
-    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script src="https://kit.fontawesome.com/2183401f2c.js" crossorigin="anonymous"></script>
-</head>
+    <script
+      src="https://kit.fontawesome.com/2183401f2c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body class="flex flex-col h-screen justify-between">
-
+  <body class="flex flex-col h-screen justify-between font-['Quicksand']">
     <header>
-        <nav>
-            <div class="flex text-center p-4 text-black items-center justify-between">
-                <a href="index.html">
-                    <img src="img/extremepark.svg" alt="Logo ExtremePark" class="w-30">
-                </a>
-                <div class="flex justify-end md:hidden">
-                    <button type="button" id="button-menu">
-                        <i class="fa-solid fa-bars text-2xl"></i>
-                    </button>
-                </div>
-                <ul class="hidden md:flex gap-10 mt-2">
-                    <li><a class="text-xl text-orange-600 border-b-2 border-orange-600 pb-2 p-4" href="index.html">Inicio</a></li>
-                    <li><a class="text-xl" href="atracciones.html">Atracciones</a></li>
-                    <li><a class="text-xl" href="servicios.html">Servicios</a></li>
-                    <li><a class="text-xl" href="entradas.html">Entradas</a></li>
-                </ul>
-            </div>
-            <div class="hidden flex flex-col justify-center text-center m-4 list-menu">
-                <ul class="flex flex-col gap-4">
-                    <li><a class="text-xl text-orange-600 border-b-2 border-orange-600 pb-2 p-4" href="index.html">Inicio</a></li>
-                    <li><a class="text-xl" href="atracciones.html">Atracciones</a></li>
-                    <li><a class="text-xl" href="servicios.html">Servicios</a></li>
-                    <li><a class="text-xl" href="entradas.html">Entradas</a></li>
-                </ul>
-            </div>
-        </nav>
+      <nav>
+        <div
+          class="flex text-center p-4 text-black items-center justify-between"
+        >
+          <a href="index.html">
+            <img
+              src="img/extremepark.svg"
+              alt="Logo ExtremePark"
+              class="w-30"
+            />
+          </a>
+          <div class="flex justify-end md:hidden">
+            <button type="button" id="button-menu">
+              <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+          </div>
+          <ul class="hidden md:flex gap-10 mt-2">
+            <li>
+              <a
+                class="text-xl text-orange-600 border-b-2 border-orange-600 pb-2 p-4"
+                href="index.html"
+                >Inicio</a
+              >
+            </li>
+            <li><a class="text-xl" href="atracciones.html">Atracciones</a></li>
+            <li><a class="text-xl" href="servicios.html">Servicios</a></li>
+            <li><a class="text-xl" href="entradas.html">Entradas</a></li>
+          </ul>
+        </div>
+        <div
+          class="hidden flex flex-col justify-center text-center m-4 list-menu"
+        >
+          <ul class="flex flex-col gap-4">
+            <li>
+              <a
+                class="text-xl text-orange-600 border-b-2 border-orange-600 pb-2 p-4"
+                href="index.html"
+                >Inicio</a
+              >
+            </li>
+            <li><a class="text-xl" href="atracciones.html">Atracciones</a></li>
+            <li><a class="text-xl" href="servicios.html">Servicios</a></li>
+            <li><a class="text-xl" href="entradas.html">Entradas</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
-    <main></main>
-    
-    <footer class="flex flex-wrap justify-start gap-10 items-center border-t border-black-800 p-8 m-4 mt-20 md:gap-75">
-        <div class="flex flex-col gap-4">
-            <h5 class="text-lg font-bold">Contactenos</h5>
-            <p>Si te quedo alguna consulta no dudes en escribirnos!</p>
-        </div>
-        <form class="flex flex-col gap-4">
-            <input type="email" class="border-b border-gray-800 w-100" placeholder="Email" required>
-            <button type="submit" class="border border-gray-800 w-20 p-1">Enviar</button>
-            <!-- <i class="fa-brands fa-facebook"></i> -->
-        </form>
-        <!-- <h2 class="text-lg font-semibold">UADE</h2>
+    <main>
+      <section class="p-16 flex flex-col gap-10">
+        <article class="flex gap-[2%]">
+          <div class="flex flex-col w-[48%] gap-4">
+            <h1 class="font-semibold text-6xl">
+              Donde la adrenalina no tiene límites
+            </h1>
+            <p class="text-lg">
+              Viví la aventura definitiva en el parque más extremo del país.
+              Montañas rusas vertiginosas, atracciones alucinantes y
+              experiencias inolvidables para todas las edades. ¿Estás listo para
+              desafiar tus límites?
+            </p>
+            <button
+              class="rounded-[50px] bg-[#AF52DE] w-52 h-10 text-white font-bold"
+            >
+              Comprar Entradas
+            </button>
+          </div>
+          <div class="w-[48%]">
+            <img src="img/home/home.png" alt="home" />
+          </div>
+        </article>
+        <article class="flex flex-col items-center gap-4">
+          <div class="h-[1px] w-full bg-black"></div>
+          <h2 class="font-semibold text-4xl">Nuestros pasaportes</h2>
+          <div class="w-full flex justify-between">
+            <div class="flex flex-col gap-2 items-center">
+              <img
+                class="w-80 h-72"
+                src="img/home/comboFamiliar.png"
+                alt="comboFamiliar"
+              />
+              <div class="flex flex-col gap-2 w-[60%] items-center">
+                <p class="font-semibold text-lg">Combo Familiar</p>
+                <p class="text-[#4F4F4F] text-center text-base">
+                  ¡Diversión en equipo! Ideal para familias, si adquiere 4
+                  entradas, tendra 1 comida por persona bonificada.
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col gap-2 items-center">
+              <img
+                class="w-80 h-72"
+                src="img/home/duoExplosivo.png"
+                alt="duoExplosivo"
+              />
+              <div class="flex flex-col gap-2 w-[60%] items-center">
+                <p class="font-semibold text-lg">Duo Explosivo</p>
+                <p class="text-[#4F4F4F] text-center text-base">
+                  ¡Entran dos! Comprando 2 entradas tendras acceso sin fila a 3
+                  atracciones a eleccion.
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col gap-2 items-center">
+              <img
+                class="w-80 h-72"
+                src="img/home/fullPass.png"
+                alt="fullPass"
+              />
+              <div class="flex flex-col gap-2 w-[60%] items-center">
+                <p class="font-semibold text-lg">Full Pass Extreme</p>
+                <p class="text-[#4F4F4F] text-center text-base">
+                  ¡Todo, sin límites! Entrada ilimitada a todas las atracciones
+                  + fast pass en las filas con la compra de tu pasaporte full
+                  pass extreme.
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="flex flex-col items-center gap-4">
+          <div class="h-[1px] w-full bg-black"></div>
+          <h2 class="font-semibold text-4xl">Nuestras atracciones</h2>
+          <div class="flex gap-8">
+            <div class="flex flex-col gap-2 items-center">
+              <img
+                class="h-[500px]"
+                src="img/home/atraccion1.png"
+                alt="atraccion1"
+              />
+              <p class="text-lg font-semibold">Atracciòn Principal</p>
+            </div>
+            <div class="flex flex-col gap-2 items-center">
+              <img
+                class="h-[500px]"
+                src="img/home/atraccion2.png"
+                alt="atraccion2"
+              />
+              <p class="text-lg font-semibold">Río Loco</p>
+            </div>
+          </div>
+        </article>
+        <article class="flex flex-col items-center gap-4">
+          <div class="h-[1px] w-full bg-black"></div>
+          <h2 class="font-semibold text-4xl">Nuestros Servicios</h2>
+          <div class="w-full flex justify-between">
+            <div class="flex flex-col gap-2 items-center w-[33%]">
+              <img class="w-8 h-8" src="img/home/car2.png" alt="logoCar" />
+              <div class="flex flex-col gap-2 w-[50%] items-center">
+                <p class="text-lg font-semibold">Estacionamiento</p>
+                <p class="text-[#4F4F4F] text-center text-xs">
+                  Contamos con servicio de estacionamiento con tu entrada.
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col gap-2 items-center w-[33%]">
+              <img class="w-8 h-8" src="img/home/carrito.png" alt="carrito" />
+              <div class="flex flex-col gap-2 w-[50%] items-center">
+                <p class="text-lg font-semibold">Transportes</p>
+                <p class="text-[#4F4F4F] text-center text-xs">
+                  Sillas de ruedas y carritos de bebe disponibles.
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col gap-2 items-center w-[33%]">
+              <img
+                class="w-8 h-8"
+                src="img/home/Hamburguesa.png"
+                alt="restaurantes"
+              />
+              <div class="flex flex-col gap-2 w-[50%] items-center">
+                <p class="text-lg font-semibold">Restaurantes</p>
+                <p class="text-[#4F4F4F] text-center text-xs">
+                  Contamos con diversos restaurantes.
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="flex flex-col items-center gap-4">
+          <div class="h-[1px] w-full bg-black"></div>
+          <h2 class="font-semibold text-4xl">Donde Estamos</h2>
+          <div class="flex gap-[3%]">
+            <div class="w-[70%]">
+              <iframe
+                class="w-full h-[450px]"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2767.709687330461!2d-58.57828462615625!3d-34.417100228285896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca595ecefc923%3A0x539c47415a536b63!2sVertigo%20Xtremo!5e0!3m2!1ses!2sar!4v1750113684501!5m2!1ses!2sar"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <div class="flex flex-col gap-6 w-[27%]">
+              <p class="text-lg font-semibold">Encuentranos!</p>
+              <p class="text-lg">
+                Te dejamos nuestra ubicacion en Google Maps para que sea
+                sencillo encontrarnos!
+              </p>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer
+      class="flex flex-wrap justify-start gap-10 items-center border-t border-black-800 p-8 m-4 mt-20 md:gap-75"
+    >
+      <div class="flex flex-col gap-4">
+        <h5 class="text-lg font-bold">Contactenos</h5>
+        <p>Si te quedo alguna consulta no dudes en escribirnos!</p>
+      </div>
+      <form class="flex flex-col gap-4">
+        <input
+          type="email"
+          class="border-b border-gray-800 w-100"
+          placeholder="Email"
+          required
+        />
+        <button type="submit" class="border border-gray-800 w-20 p-1">
+          Enviar
+        </button>
+        <!-- <i class="fa-brands fa-facebook"></i> -->
+      </form>
+      <!-- <h2 class="text-lg font-semibold">UADE</h2>
         <p>Proyecto educativo parque tematico</p> -->
     </footer>
 
     <script src="js/main.js"></script>
-</body>
-
+  </body>
 </html>
