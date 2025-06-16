@@ -3,14 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entradas - ExtremePark</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>Entradas - ExtremePark</title>
     <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://kit.fontawesome.com/2183401f2c.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="flex flex-col h-screen justify-between">
+<body class="flex flex-col h-screen justify-between font-['Quicksand']">
 
     <header>
         <nav>
@@ -140,7 +142,7 @@
                                 <button type="button" id="button-minus" onclick="decA()">
                                     <i class="fa-solid fa-minus"></i>
                                 </button>
-                                <span class="cant-adulto">1</span>
+                                <span class="cant-adulto">0</span>
                                 <button type="button" id="button-plus" onclick="incA()">
                                     <i class="fa-solid fa-plus"></i>
                                 </button>
@@ -154,7 +156,7 @@
                                 <button type="button" id="button-minus" onclick="decN()">
                                     <i class="fa-solid fa-minus"></i>
                                 </button>
-                                <span class="cant-nino">1</span>
+                                <span class="cant-nino">0</span>
                                 <button type="button" id="button-plus" onclick="incN()">
                                     <i class="fa-solid fa-plus"></i>
                                 </button>
@@ -163,12 +165,12 @@
                     </li>
                     <li>
                         <div class="flex justify-between border-b-2 border-black pb-2 p-4">
-                            <h5 class="text-lg">Pasaporte Jubilado</h5>
+                            <h5 class="text-lg">Pasaporte Full Pass Extreme</h5>
                             <div class="flex gap-4">
                                 <button type="button" id="button-minus" onclick="decJ()">
                                     <i class="fa-solid fa-minus"></i>
                                 </button>
-                                <span class="cant-jubilado">1</span>
+                                <span class="cant-jubilado">0</span>
                                 <button type="button" id="button-plus" onclick="incJ()">
                                     <i class="fa-solid fa-plus"></i>
                                 </button>
@@ -179,7 +181,7 @@
 
                 <div class="flex justify-between text-lg mt-8">
                     <p class="text-xl font-semibold">Total</p>
-                    <p class="total-ticket text-xl font-semibold">$ 14000</p>
+                    <p class="total-ticket text-xl font-semibold">$ 0</p>
                 </div>
 
                 <div class="flex justify-center mt-4 md:justify-end">
