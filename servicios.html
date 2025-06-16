@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios - ExtremePark</title>
+    <title>Inicio - ExtremePark</title>
     <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://kit.fontawesome.com/2183401f2c.js" crossorigin="anonymous"></script>
@@ -41,95 +41,79 @@
         </nav>
     </header>
 
-    <main>
-        <section class="py-16 mb-5">
-            <div class="max-w-7xl mx-auto px-4 text-center">
-              <h2 class="text-3xl font-bold text-gray-800 mb-12">Nuestros servicios</h2>
-              <div class="grid md:grid-cols-3 gap-12">
-                
-                <div class="flex flex-col items-center">
-                  <img src="img/Hamburguesa.png" alt="Gastronomía" class="w-14 h-14 mb-4">
-                  <h3 class="text-xl font-semibold  mb-2">Puestos Gastronómicos</h3>
-                  <p class=" max-w-xs">Contamos con una amplia variedad de opciones culinarias para todos los gustos: comidas rápidas, platos exóticos y snacks.</p>
+    <main >
+        <section class="relative">
+            <img src="img/Servicios/Servicios.jpg" alt="Montaña rusa" class="w-full h-[400px] object-cover">
+            <div class="absolute inset-0 bg-blue-300 opacity-20 rounded-lg"></div>
+            <div class="absolute bottom-4 left-4 md:bottom-8 md:left-8">
+                <h1 class="text-4xl md:text-6xl font-bold text-black">Servicios</h1>
+            </div>        
+        </section>
+        <!--Servicios-->
+        <section class="py-12 px-6 max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="border  p-4 hover:shadow-md">
+                    <img src="img/Servicios/restaurantes.jpg" class="mb-4 " alt="Restaurantes">
+                    <h2 class="text-lg font-semibold mb-2">Restaurantes</h2>
+                    <p class=" mb-4">No te preocupes por tu almuerzo! Podés disfrutar de los foodtrucks dentro del parque.</p>
+                    <p>Horario</p>
+                    <div class="flex items-center text-sm text-gray-600 gap-2">
+                        <p>🕒 9:00 hs - 18:00 hs</p>
+                    </div>
                 </div>
-          
-                <div class="flex flex-col items-center">
-                  <img src="img/Alquiler.png" alt="Alquiler" class="w-14 h-14 mb-4">
-                  <h3 class="text-xl font-semibold mb-2">Servicio de Alquiler</h3>
-                  <p class="max-w-xs">Podés alquilar carritos para niños, lockers, sillas de ruedas y más para disfrutar del parque con comodidad.</p>
+
+                <div class="border p-4 hover:shadow-md">
+                    <img src="img/Servicios/Transporte.jpg" class="mb-4 w-full h-48 object-cover" alt="Transportes">
+                    <h2 class="text-lg font-semibold mb-2">Transportes dentro del parque</h2>
+                    <p class=" mb-4">Podés acceder a sillas de ruedas o carritos para bebés hasta 5 años sin cargo adicional.</p>
+                    <p>Horario</p>
+                    <div class="flex items-center text-sm text-gray-600 gap-2">
+                        <p>🕒 9:00 hs - 18:00 hs</p>
+                    </div>
                 </div>
-          
-                <div class="flex flex-col items-center">
-                  <img src="img/Comercio.png" alt="Comercial" class="w-14 h-14 mb-4">
-                  <h3 class="text-xl font-semibold mb-2">Servicio Comercial</h3>
-                  <p class="max-w-xs">Encontrá productos oficiales, recuerdos temáticos y merchandising exclusivo de ExtremePark.</p>
+
+                <div class="border p-4 hover:shadow-md">
+                    <img src="img/Servicios/Estacionamiento.jpg" class="mb-4 w-full h-48 object-cover" alt="Estacionamiento">
+                    <h2 class="text-lg font-semibold mb-2">Estacionamiento</h2>
+                    <p class=" mb-4">Contamos con 150 plazas dentro de nuestras instalaciones a las que podés acceder con tu entrada.</p>
+                    <p>Horario</p>
+                    <div class="flex items-center text-sm text-gray-600 gap-2">
+                        <p>🕒 9:00 hs - 18:00 hs</p>
+                    </div>
                 </div>
-          
-              </div>
+            </div>
+         </section >
+         <!--Preguntas frecuentes-->
+        <section class="py-12 px-6 gap-10 items-center border-t border-black-800 p-8 m-4 mt-5 ">
+            <h2 class="text-center text-xl font-semibold mb-8">Preguntas frecuentes</h2>
+            <div class="max-w-3xl mx-auto space-y-4">
+        
+            <details class="bg-purple-200 rounded-lg p-4">
+                <summary>¿Puedo acceder en silla de ruedas?</summary>
+                <p class="mt-2 ">¡Claro que sí! Todo el parque es accesible para nuestro público.</p>
+            </details>
+        
+            <details class="bg-purple-200 rounded-lg p-4">
+                <summary> ¿Puedo llevar comida al parque?</summary>
+                <p class="mt-2 ">No se permite el ingreso de alimentos externos, pero contamos con foodtrucks adentro.</p>
+            </details>
+        
+            <details class="bg-purple-200 rounded-lg p-4">
+                <summary> ¿Dónde puedo guardar mis pertenencias?</summary>
+                <p class="mt-2 ">Disponemos de casilleros y lockers en la entrada para que puedas guardar tus objetos personales con seguridad.</p>
+            </details>
+
+            <details class="bg-purple-200 rounded-lg p-4">
+                <summary>  ¿Ofrecen asistencia para personas con discapacidad o necesidades especiales?</summary>
+                <p class="mt-2 ">Sí, nuestro equipo está capacitado para brindar asistencia personalizada. También contamos con entradas prioritarias y accesos adaptados.</p>
+            </details>
+            
             </div>
         </section>
-
-          <!-- Puestos de Gastronomia -->
-            <div class="mx-auto px-4">
-                
-                <div class="bg-green-700 h-12 mb-3">
-                    <h2 class="text-3xl md:text-4xl font-bold text-white text-center mb-12">Puestos Gastronómicos</h2>
-                </div>
-
-                <div class="grid md:grid-cols-3 gap-3">
-                
-                    <div class="bg-blue-300 p-6  shadow hover:shadow-lg transition text-center">
-                    <img src="img/Panchos.jpg" alt="Panchos Extreme" class="w-100 h-60 mx-auto mb-4">
-                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Panchos Extreme</h3>
-                    <p>Los mejores panchos los encontrás acá, con toppings locos y sabor salvaje.</p>
-                    </div>
-            
-                    <div class="bg-red-400 p-6 shadow hover:shadow-lg transition text-center">
-                    <img src="img/Restautante.jpg" alt="Extreme restaurant" class="w-100 h-60 mx-auto mb-4">
-                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Extreme restaurant</h3>
-                    <p>Platos variados para todos los gustos, con opciones veganas y sin gluten.</p>
-                    </div>
-            
-                    <div class="bg-yellow-200 p-6 shadow hover:shadow-lg transition text-center">
-                    <img src="img/SelvaDulce.jpg" alt="Selva Dulce" class="w-100 h-60 mx-auto mb-4">
-                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Selva Dulce</h3>
-                    <p>Postres tropicales, helados y bebidas frías para refrescarte entre aventuras.</p>
-                    </div>
-                </div>
-              
-            </div>
-            <!--Alquiler-->
-            <div class="grid md:grid-cols-2 gap-3  m-3">
-                <img src="img/Alquiler.jpg" alt="" class="w-185 h-60 object-cover">
-            
-                <div class="bg-green-700 h-60 flex items-center justify-center ">
-                    <div class="text-center px-6">
-                        <h3 class="text-xl text-white font-bold mb-2">Servicio de Alquiler</h3>
-                        <p class="text-white">Carritos para niños, Ideal para que los más peques disfruten del parque sin cansarse.</p>
-                        <p class="text-white">Lockers personales, Guardá tus pertenencias con seguridad mientras te divertís.</p>
-                        <p class="text-white">Sillas de ruedas, Accesibilidad total para que nadie se quede sin explorar ExtremePark.</p>
-                    </div>
-                </div>
-            </div>
-            <!--Comercial-->
-            <div class="grid md:grid-cols-2 gap-3 m-3">
-                <div class="bg-green-700 h-60 flex items-center justify-center">
-                    <div class="text-center px-6">
-                        <h3 class="text-xl text-white font-bold mb-2">Recuerdos de ExtremePark</h3>
-                        <p class="text-white">Pasa por la tienda de recuerdos donde encontraras Llaveros, gorras y souvenirs únicos para que no te olvides de tu visita.</p>
-                    </div>
-                </div>
-            
-                <img src="img/TiendaRegalos.jpg" alt="" class="w-185 h-60 object-cover">
-            </div>
-        </div>
-
-        <section>
-            <img class="w-full" src="img/mapa_parque.jpg" alt="atracciones parque tematico">
-        </section>
+        
     </main>
     
-    <footer class="flex flex-wrap justify-start gap-10 items-center border-t border-black-800 p-8 m-4 mt-20 md:gap-75">
+    <footer class="flex flex-wrap justify-start gap-10 items-center border-t border-black-800 p-8 m-4 mt-10 md:gap-75">
         <div class="flex flex-col gap-4">
             <h5 class="text-lg font-bold">Contactenos</h5>
             <p>Si te quedo alguna consulta no dudes en escribirnos!</p>
