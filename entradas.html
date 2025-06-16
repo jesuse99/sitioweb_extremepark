@@ -47,88 +47,92 @@
 
     <main>
         <div class="flex justify-center items-center p-4">
-            <!-- <h1 class="text-3xl">Tickets</h1> -->
-            <img src="img/Entradas/tickets-desktop.png"
+            <h1 class="text-3xl font-bold text-black">Tickets</h1>
+            <!-- <img src="img/Entradas/tickets-desktop.png"
                 srcset="img/Entradas/tickets-movil.png 800w, img/Entradas/tickets-desktop.png 2600w"
-                sizes="(max-width: 600px) w-100, w-100" alt="titulo entradas" class="w-100 md:w-full">
+                sizes="(max-width: 600px) w-100, w-100" alt="titulo entradas" class="w-100 md:w-full"> -->
         </div>
 
         <section class="flex flex-wrap gap-4 justify-center items-center p-2">
-            <div class="w-100">
-                <div class="bg-white rounded-lg shadow-xl p-6 w-full max-w-lg">
+            <div class="w-100">                <div class="bg-white rounded-2xl shadow-lg p-6 w-full max-w-md border border-gray-100">
+                    <!-- Header del calendario -->
                     <div class="flex justify-between items-center mb-6">
-                        <button class="text-gray-600 hover:text-gray-800 focus:outline-none">
-                            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M15 19l-7-7 7-7"></path>
+                        <button id="prevMonth" class="p-2 hover:bg-gray-100 rounded-full transition-colors">
+                            <svg class="h-5 w-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
                             </svg>
                         </button>
-                        <h2 class="text-2xl font-semibold text-gray-800">Junio 2025</h2>
-                        <button class="text-gray-600 hover:text-gray-800 focus:outline-none">
-                            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
-                                </path>
+                        <h2 id="monthYear" class="text-lg font-semibold text-gray-900">Junio 2025</h2>
+                        <button id="nextMonth" class="p-2 hover:bg-gray-100 rounded-full transition-colors">
+                            <svg class="h-5 w-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                             </svg>
                         </button>
                     </div>
 
-                    <div class="grid grid-cols-7 gap-2 text-center text-sm font-medium text-gray-500 mb-4">
-                        <div>Dom</div>
-                        <div>Lun</div>
-                        <div>Mar</div>
-                        <div>Mié</div>
-                        <div>Jue</div>
-                        <div>Vie</div>
-                        <div>Sáb</div>
+                    <!-- Días de la semana -->
+                    <div class="grid grid-cols-7 gap-1 mb-4">
+                        <div class="text-center text-sm font-medium text-gray-500 py-2">Dom</div>
+                        <div class="text-center text-sm font-medium text-gray-500 py-2">Lun</div>
+                        <div class="text-center text-sm font-medium text-gray-500 py-2">Mar</div>
+                        <div class="text-center text-sm font-medium text-gray-500 py-2">Mié</div>
+                        <div class="text-center text-sm font-medium text-gray-500 py-2">Jue</div>
+                        <div class="text-center text-sm font-medium text-gray-500 py-2">Vie</div>
+                        <div class="text-center text-sm font-medium text-gray-500 py-2">Sáb</div>
                     </div>
 
-                    <div class="grid grid-cols-7 gap-2 text-center text-gray-700">
-                        <div class="py-2 text-gray-400">26</div>
-                        <div class="py-2 text-gray-400">27</div>
-                        <div class="py-2 text-gray-400">28</div>
-                        <div class="py-2 text-gray-400">29</div>
-                        <div class="py-2 text-gray-400">30</div>
-                        <div class="py-2 text-gray-400">31</div>
+                    <!-- Días del calendario -->
+                    <div id="calendarDays" class="grid grid-cols-7 gap-1">
+                        <!-- Días del mes anterior (grises) -->
+                        <div class="h-10 flex items-center justify-center text-sm text-gray-300">26</div>
+                        <div class="h-10 flex items-center justify-center text-sm text-gray-300">27</div>
+                        <div class="h-10 flex items-center justify-center text-sm text-gray-300">28</div>
+                        <div class="h-10 flex items-center justify-center text-sm text-gray-300">29</div>
+                        <div class="h-10 flex items-center justify-center text-sm text-gray-300">30</div>
+                        <div class="h-10 flex items-center justify-center text-sm text-gray-300">31</div>
 
-                        <div class="py-2 rounded-md hover:bg-blue-100 cursor-pointer">1</div>
-                        <div class="py-2 rounded-md hover:bg-blue-100 cursor-pointer">2</div>
-                        <div class="py-2 rounded-md hover:bg-blue-100 cursor-pointer">3</div>
-                        <div class="py-2 rounded-md hover:bg-blue-100 cursor-pointer">4</div>
-                        <div class="py-2 rounded-md hover:bg-blue-100 cursor-pointer">5</div>
-                        <div class="py-2 rounded-md hover:bg-blue-100 cursor-pointer">6</div>
-                        <div class="py-2 rounded-md hover:bg-blue-100 cursor-pointer">7</div>
-                        <div class="py-2 rounded-md hover:bg-blue-100 cursor-pointer">8</div>
-                        <div class="py-2 rounded-md hover:bg-blue-100 cursor-pointer">9</div>
-                        <div class="py-2 rounded-md hover:bg-blue-100 cursor-pointer">10</div>
-                        <div class="py-2 rounded-md hover:bg-blue-100 cursor-pointer">11</div>
-                        <div class="py-2 rounded-md hover:bg-blue-100 cursor-pointer">12</div>
-                        <div class="py-2 rounded-md hover:bg-blue-100 cursor-pointer">13</div>
-                        <div class="py-2 rounded-md hover:bg-blue-100 cursor-pointer">14</div>
-                        <div class="py-2 rounded-md hover:bg-blue-100 cursor-pointer">15</div>
-                        <div class="py-2 rounded-md hover:bg-blue-100 cursor-pointer">16</div>
-                        <div class="py-2 rounded-md hover:bg-blue-100 cursor-pointer">17</div>
-                        <div class="py-2 rounded-md hover:bg-blue-100 cursor-pointer">18</div>
-                        <div class="py-2 rounded-md hover:bg-blue-100 cursor-pointer">19</div>
-                        <div class="py-2 rounded-md hover:bg-blue-100 cursor-pointer">20</div>
-                        <div class="py-2 rounded-md hover:bg-blue-100 cursor-pointer">21</div>
-                        <div class="py-2 rounded-md hover:bg-blue-100 cursor-pointer">22</div>
-                        <div class="py-2 rounded-md hover:bg-blue-100 cursor-pointer">23</div>
-                        <div class="py-2 rounded-md hover:bg-blue-100 cursor-pointer">24</div>
-                        <div class="py-2 rounded-md hover:bg-blue-100 cursor-pointer">25</div>
-                        <div class="py-2 rounded-md hover:bg-blue-100 cursor-pointer">26</div>
-                        <div class="py-2 rounded-md hover:bg-blue-100 cursor-pointer">27</div>
-                        <div class="py-2 rounded-md hover:bg-blue-100 cursor-pointer">28</div>
-                        <div class="py-2 rounded-md hover:bg-blue-100 cursor-pointer">29</div>
-                        <div class="py-2 rounded-md hover:bg-blue-100 cursor-pointer">30</div>
+                        <!-- Días del mes actual -->
+                        <div class="h-10 flex items-center justify-center text-sm text-gray-700 hover:bg-gray-100 rounded-lg cursor-pointer transition-colors calendar-day" data-day="1">1</div>
+                        <div class="h-10 flex items-center justify-center text-sm text-gray-700 hover:bg-gray-100 rounded-lg cursor-pointer transition-colors calendar-day" data-day="2">2</div>
+                        <div class="h-10 flex items-center justify-center text-sm text-gray-700 hover:bg-gray-100 rounded-lg cursor-pointer transition-colors calendar-day" data-day="3">3</div>
+                        <div class="h-10 flex items-center justify-center text-sm text-gray-700 hover:bg-gray-100 rounded-lg cursor-pointer transition-colors calendar-day" data-day="4">4</div>
+                        <div class="h-10 flex items-center justify-center text-sm text-gray-700 hover:bg-gray-100 rounded-lg cursor-pointer transition-colors calendar-day" data-day="5">5</div>
+                        <div class="h-10 flex items-center justify-center text-sm text-gray-700 hover:bg-gray-100 rounded-lg cursor-pointer transition-colors calendar-day" data-day="6">6</div>
+                        <div class="h-10 flex items-center justify-center text-sm text-gray-700 hover:bg-gray-100 rounded-lg cursor-pointer transition-colors calendar-day" data-day="7">7</div>
+                        <div class="h-10 flex items-center justify-center text-sm text-gray-700 hover:bg-gray-100 rounded-lg cursor-pointer transition-colors calendar-day" data-day="8">8</div>
+                        <div class="h-10 flex items-center justify-center text-sm text-gray-700 hover:bg-gray-100 rounded-lg cursor-pointer transition-colors calendar-day" data-day="9">9</div>
+                        <div class="h-10 flex items-center justify-center text-sm text-gray-700 hover:bg-gray-100 rounded-lg cursor-pointer transition-colors calendar-day" data-day="10">10</div>
+                        <div class="h-10 flex items-center justify-center text-sm text-gray-700 hover:bg-gray-100 rounded-lg cursor-pointer transition-colors calendar-day" data-day="11">11</div>
+                        <div class="h-10 flex items-center justify-center text-sm text-gray-700 hover:bg-gray-100 rounded-lg cursor-pointer transition-colors calendar-day" data-day="12">12</div>
+                        <div class="h-10 flex items-center justify-center text-sm text-gray-700 hover:bg-gray-100 rounded-lg cursor-pointer transition-colors calendar-day" data-day="13">13</div>
+                        <div class="h-10 flex items-center justify-center text-sm text-gray-700 hover:bg-gray-100 rounded-lg cursor-pointer transition-colors calendar-day" data-day="14">14</div>
+                        <div class="h-10 flex items-center justify-center text-sm text-gray-700 hover:bg-gray-100 rounded-lg cursor-pointer transition-colors calendar-day" data-day="15">15</div>
+                        
+                        <!-- Día 16 seleccionado (azul como en la imagen) -->
+                        <div class="h-10 flex items-center justify-center text-sm bg-blue-500 text-white rounded-lg cursor-pointer font-medium calendar-day selected" data-day="16">16</div>
+                        
+                        <div class="h-10 flex items-center justify-center text-sm text-gray-700 hover:bg-gray-100 rounded-lg cursor-pointer transition-colors calendar-day" data-day="17">17</div>
+                        <div class="h-10 flex items-center justify-center text-sm text-gray-700 hover:bg-gray-100 rounded-lg cursor-pointer transition-colors calendar-day" data-day="18">18</div>
+                        <div class="h-10 flex items-center justify-center text-sm text-gray-700 hover:bg-gray-100 rounded-lg cursor-pointer transition-colors calendar-day" data-day="19">19</div>
+                        <div class="h-10 flex items-center justify-center text-sm text-gray-700 hover:bg-gray-100 rounded-lg cursor-pointer transition-colors calendar-day" data-day="20">20</div>
+                        <div class="h-10 flex items-center justify-center text-sm text-gray-700 hover:bg-gray-100 rounded-lg cursor-pointer transition-colors calendar-day" data-day="21">21</div>
+                        <div class="h-10 flex items-center justify-center text-sm text-gray-700 hover:bg-gray-100 rounded-lg cursor-pointer transition-colors calendar-day" data-day="22">22</div>
+                        <div class="h-10 flex items-center justify-center text-sm text-gray-700 hover:bg-gray-100 rounded-lg cursor-pointer transition-colors calendar-day" data-day="23">23</div>
+                        <div class="h-10 flex items-center justify-center text-sm text-gray-700 hover:bg-gray-100 rounded-lg cursor-pointer transition-colors calendar-day" data-day="24">24</div>
+                        <div class="h-10 flex items-center justify-center text-sm text-gray-700 hover:bg-gray-100 rounded-lg cursor-pointer transition-colors calendar-day" data-day="25">25</div>
+                        <div class="h-10 flex items-center justify-center text-sm text-gray-700 hover:bg-gray-100 rounded-lg cursor-pointer transition-colors calendar-day" data-day="26">26</div>
+                        <div class="h-10 flex items-center justify-center text-sm text-gray-700 hover:bg-gray-100 rounded-lg cursor-pointer transition-colors calendar-day" data-day="27">27</div>
+                        <div class="h-10 flex items-center justify-center text-sm text-gray-700 hover:bg-gray-100 rounded-lg cursor-pointer transition-colors calendar-day" data-day="28">28</div>
+                        <div class="h-10 flex items-center justify-center text-sm text-gray-700 hover:bg-gray-100 rounded-lg cursor-pointer transition-colors calendar-day" data-day="29">29</div>
+                        <div class="h-10 flex items-center justify-center text-sm text-gray-700 hover:bg-gray-100 rounded-lg cursor-pointer transition-colors calendar-day" data-day="30">30</div>
 
-                        <div class="py-2 text-gray-400">1</div>
-                        <div class="py-2 text-gray-400">2</div>
-                        <div class="py-2 text-gray-400">3</div>
-                        <div class="py-2 text-gray-400">4</div>
-                        <div class="py-2 text-gray-400">5</div>
-                        <div class="py-2 text-gray-400">6</div>
+                        <!-- Días del mes siguiente (grises) -->
+                        <div class="h-10 flex items-center justify-center text-sm text-gray-300">1</div>
+                        <div class="h-10 flex items-center justify-center text-sm text-gray-300">2</div>
+                        <div class="h-10 flex items-center justify-center text-sm text-gray-300">3</div>
+                        <div class="h-10 flex items-center justify-center text-sm text-gray-300">4</div>
+                        <div class="h-10 flex items-center justify-center text-sm text-gray-300">5</div>
+                        <div class="h-10 flex items-center justify-center text-sm text-gray-300">6</div>
                     </div>
                 </div>
             </div>
@@ -206,8 +210,98 @@
             <!-- <i class="fa-brands fa-facebook"></i> -->
         </form>
         <!-- <h2 class="text-lg font-semibold">UADE</h2>
-        <p>Proyecto educativo parque tematico</p> -->
-    </footer>
+        <p>Proyecto educativo parque tematico</p> -->    </footer>
+
+    <!-- JavaScript para el calendario funcional -->
+    <script>
+        // Variables globales para el calendario
+        let currentDate = new Date();
+        let selectedDate = new Date(2025, 5, 16); // 16 de junio de 2025 (mes 5 = junio)
+        
+        const monthNames = [
+            'Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio',
+            'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'
+        ];
+
+        function updateCalendar() {
+            const monthYear = document.getElementById('monthYear');
+            const calendarDays = document.getElementById('calendarDays');
+            
+            // Actualizar el título del mes
+            monthYear.textContent = `${monthNames[currentDate.getMonth()]} ${currentDate.getFullYear()}`;
+            
+            // Obtener primer día del mes y número de días
+            const firstDay = new Date(currentDate.getFullYear(), currentDate.getMonth(), 1);
+            const lastDay = new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 0);
+            const startDate = new Date(firstDay);
+            startDate.setDate(startDate.getDate() - firstDay.getDay());
+            
+            // Limpiar el calendario
+            calendarDays.innerHTML = '';
+            
+            // Generar 42 días (6 semanas x 7 días)
+            for (let i = 0; i < 42; i++) {
+                const day = new Date(startDate);
+                day.setDate(startDate.getDate() + i);
+                
+                const dayElement = document.createElement('div');
+                dayElement.className = 'h-10 flex items-center justify-center text-sm cursor-pointer transition-colors rounded-lg';
+                dayElement.textContent = day.getDate();
+                
+                // Estilos según el tipo de día
+                if (day.getMonth() !== currentDate.getMonth()) {
+                    // Días de otros meses
+                    dayElement.className += ' text-gray-300';
+                } else {
+                    // Días del mes actual
+                    dayElement.className += ' text-gray-700 hover:bg-gray-100 calendar-day';
+                    dayElement.setAttribute('data-day', day.getDate());
+                    dayElement.setAttribute('data-month', day.getMonth());
+                    dayElement.setAttribute('data-year', day.getFullYear());
+                    
+                    // Verificar si es el día seleccionado
+                    if (selectedDate && 
+                        day.getDate() === selectedDate.getDate() && 
+                        day.getMonth() === selectedDate.getMonth() && 
+                        day.getFullYear() === selectedDate.getFullYear()) {
+                        dayElement.className = dayElement.className.replace('text-gray-700 hover:bg-gray-100', 'bg-blue-500 text-white font-medium');
+                        dayElement.classList.add('selected');
+                    }
+                    
+                    // Agregar evento click
+                    dayElement.addEventListener('click', function() {
+                        selectDate(day);
+                    });
+                }
+                
+                calendarDays.appendChild(dayElement);
+            }
+        }
+
+        function selectDate(date) {
+            selectedDate = date;
+            updateCalendar();
+            
+            // Aquí puedes agregar lógica adicional cuando se selecciona una fecha
+            console.log('Fecha seleccionada:', date.toLocaleDateString('es-ES'));
+        }
+
+        // Navegación entre meses
+        document.getElementById('prevMonth').addEventListener('click', function() {
+            currentDate.setMonth(currentDate.getMonth() - 1);
+            updateCalendar();
+        });
+
+        document.getElementById('nextMonth').addEventListener('click', function() {
+            currentDate.setMonth(currentDate.getMonth() + 1);
+            updateCalendar();
+        });
+
+        // Inicializar el calendario cuando se carga la página
+        document.addEventListener('DOMContentLoaded', function() {
+            updateCalendar();
+        });
+    </script>
 
     <script src="js/main.js"></script>
 </body>
