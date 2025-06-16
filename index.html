@@ -68,9 +68,9 @@
 
     <main>
       <section class="p-16 flex flex-col gap-10">
-        <article class="flex gap-[2%]">
-          <div class="flex flex-col w-[48%] gap-4">
-            <h1 class="font-semibold text-6xl">
+        <article class="flex gap-[2%] flex-col-reverse md:flex-row">
+          <div class="flex flex-col w-full md:w-[48%] gap-4">
+            <h1 class="font-semibold text-[40px] md:text-6xl">
               Donde la adrenalina no tiene límites
             </h1>
             <p class="text-lg">
@@ -79,21 +79,27 @@
               experiencias inolvidables para todas las edades. ¿Estás listo para
               desafiar tus límites?
             </p>
-            <button
-              class="rounded-[50px] bg-[#AF52DE] w-52 h-10 text-white font-bold"
-            >
-              Comprar Entradas
-            </button>
+            <a href="entradas.html">
+              <button
+                class="rounded-[50px] bg-[#AF52DE] w-52 h-10 text-white font-bold cursor-pointer"
+              >
+                Comprar Entradas
+              </button>
+            </a>
           </div>
-          <div class="w-[48%]">
+          <div class="w-full md:w-[48%]">
             <img src="img/home/home.png" alt="home" />
           </div>
         </article>
         <article class="flex flex-col items-center gap-4">
           <div class="h-[1px] w-full bg-black"></div>
-          <h2 class="font-semibold text-4xl">Nuestros pasaportes</h2>
-          <div class="w-full flex justify-between">
-            <div class="flex flex-col gap-2 items-center">
+          <h2 class="font-semibold text-2xl md:text-4xl">
+            Nuestros pasaportes
+          </h2>
+          <div
+            class="w-full flex flex-col md:flex-row justify-between gap-6 md:gap-0"
+          >
+            <div class="flex flex-col gap-2 items-center w-full md:w-[33%]">
               <img
                 class="w-80 h-72"
                 src="img/home/comboFamiliar.png"
@@ -107,7 +113,7 @@
                 </p>
               </div>
             </div>
-            <div class="flex flex-col gap-2 items-center">
+            <div class="flex flex-col gap-2 items-center w-full md:w-[33%]">
               <img
                 class="w-80 h-72"
                 src="img/home/duoExplosivo.png"
@@ -121,7 +127,7 @@
                 </p>
               </div>
             </div>
-            <div class="flex flex-col gap-2 items-center">
+            <div class="flex flex-col gap-2 items-center w-full md:w-[33%]">
               <img
                 class="w-80 h-72"
                 src="img/home/fullPass.png"
@@ -140,19 +146,21 @@
         </article>
         <article class="flex flex-col items-center gap-4">
           <div class="h-[1px] w-full bg-black"></div>
-          <h2 class="font-semibold text-4xl">Nuestras atracciones</h2>
-          <div class="flex gap-8">
+          <h2 class="font-semibold text-2xl md:text-4xl">
+            Nuestras atracciones
+          </h2>
+          <div class="flex flex-col md:flex-row gap-8">
             <div class="flex flex-col gap-2 items-center">
               <img
-                class="h-[500px]"
+                class="h-[400px] md:h-[500px]"
                 src="img/home/atraccion1.png"
                 alt="atraccion1"
               />
-              <p class="text-lg font-semibold">Atracciòn Principal</p>
+              <p class="text-lg font-semibold">Atracción Principal</p>
             </div>
             <div class="flex flex-col gap-2 items-center">
               <img
-                class="h-[500px]"
+                class="h-[400px] md:h-[500px]"
                 src="img/home/atraccion2.png"
                 alt="atraccion2"
               />
@@ -162,9 +170,11 @@
         </article>
         <article class="flex flex-col items-center gap-4">
           <div class="h-[1px] w-full bg-black"></div>
-          <h2 class="font-semibold text-4xl">Nuestros Servicios</h2>
-          <div class="w-full flex justify-between">
-            <div class="flex flex-col gap-2 items-center w-[33%]">
+          <h2 class="font-semibold text-2xl md:text-4xl">Nuestros Servicios</h2>
+          <div
+            class="w-full flex flex-col md:flex-row items-center gap-6 md:gap-0 md:justify-between"
+          >
+            <div class="flex flex-col gap-2 items-center w-full md:w-[33%]">
               <img class="w-8 h-8" src="img/home/car2.png" alt="logoCar" />
               <div class="flex flex-col gap-2 w-[50%] items-center">
                 <p class="text-lg font-semibold">Estacionamiento</p>
@@ -173,7 +183,7 @@
                 </p>
               </div>
             </div>
-            <div class="flex flex-col gap-2 items-center w-[33%]">
+            <div class="flex flex-col gap-2 items-center w-full md:w-[33%]">
               <img class="w-8 h-8" src="img/home/carrito.png" alt="carrito" />
               <div class="flex flex-col gap-2 w-[50%] items-center">
                 <p class="text-lg font-semibold">Transportes</p>
@@ -182,7 +192,7 @@
                 </p>
               </div>
             </div>
-            <div class="flex flex-col gap-2 items-center w-[33%]">
+            <div class="flex flex-col gap-2 items-center w-full md:w-[33%]">
               <img
                 class="w-8 h-8"
                 src="img/home/Hamburguesa.png"
@@ -199,11 +209,11 @@
         </article>
         <article class="flex flex-col items-center gap-4">
           <div class="h-[1px] w-full bg-black"></div>
-          <h2 class="font-semibold text-4xl">Donde Estamos</h2>
-          <div class="flex gap-[3%]">
-            <div class="w-[70%]">
+          <h2 class="font-semibold text-2xl md:text-4xl">Donde Estamos</h2>
+          <div class="flex flex-col md:flex-row gap-6 md:gap-[3%]">
+            <div class="w-full md:w-[70%]">
               <iframe
-                class="w-full h-[450px]"
+                class="w-full h-[350px] md:h-[450px]"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2767.709687330461!2d-58.57828462615625!3d-34.417100228285896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca595ecefc923%3A0x539c47415a536b63!2sVertigo%20Xtremo!5e0!3m2!1ses!2sar!4v1750113684501!5m2!1ses!2sar"
                 style="border: 0"
                 allowfullscreen=""
@@ -211,7 +221,7 @@
                 referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
-            <div class="flex flex-col gap-6 w-[27%]">
+            <div class="flex flex-col gap-6 w-full md:w-[27%]">
               <p class="text-lg font-semibold">Encuentranos!</p>
               <p class="text-lg">
                 Te dejamos nuestra ubicacion en Google Maps para que sea
