@@ -31,13 +31,13 @@ diaFecha.forEach(element => {
     });
 });
 
-let cantA = 1;
-let cantN = 1;
-let cantJ = 1;
+let cantA = 0;
+let cantN = 0;
+let cantJ = 0;
 
-let precioA = 8000;
-let precioN = 4000;
-let precioJ = 2000;
+let precioA = 4000;
+let precioN = 2000;
+let precioJ = 8000;
 
 function updateTotal() {
     let total = (cantA * precioA) + (cantN * precioN) + (cantJ * precioJ)
