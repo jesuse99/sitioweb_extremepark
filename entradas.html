@@ -23,7 +23,7 @@
                     <img src="img/extremepark.svg" alt="Logo ExtremePark" class="w-30">
                 </a>
                 <div class="flex justify-end md:hidden">
-                    <button type="button" id="button-menu">
+                    <button type="button" id="button-menu" aria-label="Cambiar navegación">
                         <i class="fa-solid fa-bars text-2xl"></i>
                     </button>
                 </div>
@@ -57,13 +57,13 @@
                 <div class="bg-white rounded-2xl shadow-lg p-6 w-full max-w-md border border-gray-100">
                     <!-- Header del calendario -->
                     <div class="flex justify-between items-center mb-6">
-                        <button id="prevMonth" class="p-2 hover:bg-gray-100 rounded-full transition-colors">
+                        <button id="prevMonth" class="p-2 hover:bg-gray-100 rounded-full transition-colors" aria-label="Mes anterior">
                             <svg class="h-5 w-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
                             </svg>
                         </button>
                         <h2 id="monthYear" class="text-lg font-semibold text-gray-900">Junio 2025</h2>
-                        <button id="nextMonth" class="p-2 hover:bg-gray-100 rounded-full transition-colors">
+                        <button id="nextMonth" class="p-2 hover:bg-gray-100 rounded-full transition-colors" aria-label="Mes posterior">
                             <svg class="h-5 w-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                             </svg>
@@ -140,11 +140,11 @@
                         <div class="flex justify-between border-b-2 border-black pb-2 p-4">
                             <h5 class="text-lg">Pasaporte adulto</h5>
                             <div class="flex gap-4">
-                                <button type="button" id="button-minus" onclick="decA()">
+                                <button type="button" id="button-minus" aria-label="Restar entradas" onclick="decA()">
                                     <i class="fa-solid fa-minus"></i>
                                 </button>
                                 <span class="cant-adulto">0</span>
-                                <button type="button" id="button-plus" onclick="incA()">
+                                <button type="button" id="button-plus" aria-label="Sumar entradas" onclick="incA()">
                                     <i class="fa-solid fa-plus"></i>
                                 </button>
                             </div>
@@ -154,11 +154,11 @@
                         <div class="flex justify-between border-b-2 border-black pb-2 p-4">
                             <h5 class="text-lg">Pasaporte Niño</h5>
                             <div class="flex gap-4">
-                                <button type="button" id="button-minus" onclick="decN()">
+                                <button type="button" id="button-minus" aria-label="Restar entradas" onclick="decN()">
                                     <i class="fa-solid fa-minus"></i>
                                 </button>
                                 <span class="cant-nino">0</span>
-                                <button type="button" id="button-plus" onclick="incN()">
+                                <button type="button" id="button-plus" aria-label="Sumar entradas" onclick="incN()">
                                     <i class="fa-solid fa-plus"></i>
                                 </button>
                             </div>
@@ -168,11 +168,11 @@
                         <div class="flex justify-between border-b-2 border-black pb-2 p-4">
                             <h5 class="text-lg">Pasaporte Full Pass Extreme</h5>
                             <div class="flex gap-4">
-                                <button type="button" id="button-minus" onclick="decJ()">
+                                <button type="button" id="button-minus" aria-label="Restar entradas" onclick="decJ()">
                                     <i class="fa-solid fa-minus"></i>
                                 </button>
                                 <span class="cant-jubilado">0</span>
-                                <button type="button" id="button-plus" onclick="incJ()">
+                                <button type="button" id="button-plus" aria-label="Sumar entradas" onclick="incJ()">
                                     <i class="fa-solid fa-plus"></i>
                                 </button>
                             </div>
@@ -187,8 +187,8 @@
 
                 <div class="flex justify-center mt-4 md:justify-end">
                     <a class="p-2 bg-violet-300 cursor-not-allowed pointer-events-auto text-white rounded-md ms-2"   
-                        aria-label="confirmar compra" id="button-buy-disabled" target="_blank">Comprar</a>
-                    <a class="p-2 bg-violet-600 text-white rounded-md ms-2" aria-label="confirmar compra" hidden="true" 
+                        aria-label="Confirmar compra" id="button-buy-disabled" target="_blank">Comprar</a>
+                    <a class="p-2 bg-violet-600 text-white rounded-md ms-2" aria-label="Confirmar compra" hidden="true" 
                         id="button-buy-active" href="https://buy.stripe.com/test_dRm14pbfdgpo4ZObu49AA04" target="_blank">Comprar</a>
                 </div>
             </div>
