@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sitio web ExtremePark, parque temático Madagascar">
     <title>Inicio - ExtremePark</title>
     <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon" />
     <link
@@ -213,6 +214,8 @@
           <div class="flex flex-col md:flex-row gap-6 md:gap-[3%]">
             <div class="w-full md:w-[70%]">
               <iframe
+                title="Ubicación del parque"
+                aria-label="Mapa ubicación del parque"
                 class="w-full h-[350px] md:h-[450px]"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2767.709687330461!2d-58.57828462615625!3d-34.417100228285896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca595ecefc923%3A0x539c47415a536b63!2sVertigo%20Xtremo!5e0!3m2!1ses!2sar!4v1750113684501!5m2!1ses!2sar"
                 style="border: 0"
@@ -239,8 +242,8 @@
             <p>Si te quedo alguna consulta no dudes en escribirnos!</p>
         </div>
         <form class="flex flex-col gap-4">
-            <input type="email" class="border-b border-gray-800 w-100" placeholder="Email" required>
-            <button type="submit" class="border border-gray-800 w-20 p-1">Enviar</button>
+            <input type="email" class="border-b border-gray-800 w-100" placeholder="Email" aria-label="Ingrese su email" required>
+            <button type="submit" class="border border-gray-800 w-20 p-1" aria-label="Enviar datos">Enviar</button>
         </form>
     </section>
 
