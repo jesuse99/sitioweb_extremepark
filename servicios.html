@@ -82,7 +82,8 @@
                 </div>
 
                 <div class="border p-4 hover:shadow-md">
-                    <img src="img/Servicios/Estacionamiento.jpg" class="mb-4 w-full h-48 object-cover" alt="Estacionamiento">
+                    <img src="img/Servicios/Estacionamiento.jpg" class="mb-4 w-full h-48 object-cover"
+                        alt="Estacionamiento">
                     <h2 class="text-lg font-semibold mb-2">Estacionamiento</h2>
                     <p class=" mb-4">Contamos con 150 plazas dentro de nuestras instalaciones a las que podés acceder
                         con tu entrada.</p>
@@ -123,23 +124,87 @@
 
             </div>
         </section>
+        <section
+            class="flex flex-wrap justify-start gap-10 items-center border-t border-black-800 p-8 m-4 mt-10 md:gap-75">
+            <div class="flex flex-col gap-4">
+                <h5 class="text-lg font-bold">Contactános</h5>
+                <p>Si te quedó alguna consulta no dudes en escribirnos!</p>
+            </div>
+            <form class="flex flex-col gap-4">
+                <input type="email" class="border-b border-gray-800 w-100" placeholder="Email"
+                    aria-label="Ingrese su email" required>
+                <button type="submit" class="border border-gray-800 w-20 p-1" aria-label="Enviar datos">Enviar</button>
+            </form>
+        </section>
     </main>
 
-    <section class="flex flex-wrap justify-start gap-10 items-center border-t border-black-800 p-8 m-4 mt-10 md:gap-75">
-        <div class="flex flex-col gap-4">
-            <h5 class="text-lg font-bold">Contactenos</h5>
-            <p>Si te quedo alguna consulta no dudes en escribirnos!</p>
-        </div>
-        <form class="flex flex-col gap-4">
-            <input type="email" class="border-b border-gray-800 w-100" placeholder="Email" aria-label="Ingrese su email" required>
-            <button type="submit" class="border border-gray-800 w-20 p-1" aria-label="Enviar datos">Enviar</button>
-        </form>
-    </section>
+    <footer class="bg-[#AF52DE] text-white p-6">
+        <div class="max-w-6xl mx-auto">
+            <!-- Información principal del proyecto -->
+            <div class="flex flex-col md:flex-row justify-between items-center mb-6">
+                <div class="text-center md:text-left mb-4 md:mb-0">
+                    <p class="text-lg font-semibold">Proyecto educativo parque temático</p>
+                    <p class="text-sm opacity-90">Diseño y Desarrollo Web (15130) - Grupo 3</p>
+                </div>
+                <img src="img/logo-uade.png" alt="logo universidad" class="w-20 h-auto">
+            </div>
 
-    <footer class="bg-violet-800 text-white flex flex-col justify-center items-center md:flex-row md:justify-between p-3">
-        <p>Proyecto educativo parque temático</p>
-        <p>Diseño y Desarrollo Web (15130) - Grupo 3</p>
-        <img src="img/logo-uade.png" alt="logo universidad" class="w-15">
+            <!-- Línea divisora -->
+            <div class="h-px bg-white opacity-30 mb-6"></div>
+
+            <!-- Información del equipo -->
+            <div class="flex flex-col lg:flex-row justify-between items-start gap-6">
+                <!-- Integrantes del equipo -->
+                <div class="w-full lg:w-2/3">
+                    <h3 class="text-lg font-semibold mb-4 text-center lg:text-left">
+                        <i class="fa-solid fa-users mr-2"></i>
+                        Integrantes del Equipo
+                    </h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <div class="flex items-center justify-center lg:justify-start">
+                            <i class="fa-solid fa-user-circle mr-2 text-purple-300"></i>
+                            <span>Conti Santiago</span>
+                        </div>
+                        <div class="flex items-center justify-center lg:justify-start">
+                            <i class="fa-solid fa-user-circle mr-2 text-purple-300"></i>
+                            <span>Espinoza Jesus</span>
+                        </div>
+                        <div class="flex items-center justify-center lg:justify-start">
+                            <i class="fa-solid fa-user-circle mr-2 text-purple-300"></i>
+                            <span>Iglesias Martin</span>
+                        </div>
+                        <div class="flex items-center justify-center lg:justify-start">
+                            <i class="fa-solid fa-user-circle mr-2 text-purple-300"></i>
+                            <span>Tassone Facundo</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Enlaces del proyecto -->
+                <div class="w-full lg:w-1/3 text-center lg:text-right">
+                    <h3 class="text-lg font-semibold mb-4">
+                        <i class="fa-solid fa-link mr-2"></i>
+                        Enlaces del Proyecto
+                    </h3>
+                    <div class="flex flex-col gap-3">
+                        <a href="https://jesuse99.github.io/primer_entrega_parcial/index.html" target="_blank"
+                            class="inline-flex items-center justify-center lg:justify-end hover:text-purple-300 transition-colors duration-200">
+                            <i class="fa-solid fa-external-link-alt mr-2"></i>
+                            <span>Página del Grupo</span>
+                        </a>
+                        <div class="text-sm opacity-75">
+                            <i class="fa-solid fa-calendar mr-2"></i>
+                            <span>Desarrollado en 2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer bottom -->
+            <div class="mt-6 pt-4 border-t border-white border-opacity-30 text-center text-sm opacity-75">
+                <p>&copy; 2025 ExtremePark - Todos los derechos reservados | UADE - Diseño y Desarrollo Web</p>
+            </div>
+        </div>
     </footer>
 
     <script src="js/menu.js"></script>
