@@ -1,259 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Sitio web ExtremePark, parque temático Madagascar">
-    <title>Inicio - ExtremePark</title>
-    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script
-      src="https://kit.fontawesome.com/2183401f2c.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
 
-  <body class="flex flex-col h-screen justify-between font-['Quicksand']">
-    <header>
-      <nav>
-        <div
-          class="flex text-center p-4 text-black items-center justify-between"
-        >
-          <a href="index.html">
-            <img
-              src="img/extremepark.svg"
-              alt="Logo ExtremePark"
-              class="w-30"
-            />
-          </a>
-          <div class="flex justify-end md:hidden">
-            <button type="button" id="button-menu" aria-label="Cambiar navegación">
-              <i class="fa-solid fa-bars text-2xl"></i>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sitio web ExtremePark, parque temático Madagascar">
+  <title>Inicio - ExtremePark</title>
+  <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://kit.fontawesome.com/2183401f2c.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="flex flex-col h-screen justify-between font-['Quicksand']">
+  <header>
+    <nav>
+      <div class="flex text-center p-4 text-black items-center justify-between">
+        <a href="index.html">
+          <img src="img/extremepark.svg" alt="Logo ExtremePark" class="w-30" />
+        </a>
+        <div class="flex justify-end md:hidden">
+          <button type="button" id="button-menu" aria-label="Cambiar navegación">
+            <i class="fa-solid fa-bars text-2xl"></i>
+          </button>
+        </div>
+        <ul class="hidden md:flex gap-10 mt-2">
+          <li>
+            <a class="text-xl text-orange-600 border-b-2 border-orange-600 pb-2 p-4" href="index.html">Inicio</a>
+          </li>
+          <li><a class="text-xl" href="atracciones.html">Atracciones</a></li>
+          <li><a class="text-xl" href="servicios.html">Servicios</a></li>
+          <li><a class="text-xl" href="entradas.html">Entradas</a></li>
+        </ul>
+      </div>
+      <div class="hidden flex flex-col justify-center text-center m-4 list-menu">
+        <ul class="flex flex-col gap-4">
+          <li>
+            <a class="text-xl text-orange-600 border-b-2 border-orange-600 pb-2 p-4" href="index.html">Inicio</a>
+          </li>
+          <li><a class="text-xl" href="atracciones.html">Atracciones</a></li>
+          <li><a class="text-xl" href="servicios.html">Servicios</a></li>
+          <li><a class="text-xl" href="entradas.html">Entradas</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="p-16 flex flex-col gap-10">
+      <article class="flex gap-[2%] flex-col-reverse md:flex-row">
+        <div class="flex flex-col w-full md:w-[48%] gap-4">
+          <h1 class="font-semibold text-[40px] md:text-6xl">
+            Donde la adrenalina no tiene límites
+          </h1>
+          <p class="text-lg">
+            Viví la aventura definitiva en el parque más extremo del país.
+            Montañas rusas vertiginosas, atracciones alucinantes y
+            experiencias inolvidables para todas las edades. ¿Estás listo para
+            desafiar tus límites?
+          </p>
+          <a href="entradas.html">
+            <button class="rounded-[50px] bg-[#AF52DE] w-52 h-10 text-white font-bold cursor-pointer">
+              Comprar Entradas
             </button>
-          </div>
-          <ul class="hidden md:flex gap-10 mt-2">
-            <li>
-              <a
-                class="text-xl text-orange-600 border-b-2 border-orange-600 pb-2 p-4"
-                href="index.html"
-                >Inicio</a
-              >
-            </li>
-            <li><a class="text-xl" href="atracciones.html">Atracciones</a></li>
-            <li><a class="text-xl" href="servicios.html">Servicios</a></li>
-            <li><a class="text-xl" href="entradas.html">Entradas</a></li>
-          </ul>
+          </a>
         </div>
-        <div
-          class="hidden flex flex-col justify-center text-center m-4 list-menu"
-        >
-          <ul class="flex flex-col gap-4">
-            <li>
-              <a
-                class="text-xl text-orange-600 border-b-2 border-orange-600 pb-2 p-4"
-                href="index.html"
-                >Inicio</a
-              >
-            </li>
-            <li><a class="text-xl" href="atracciones.html">Atracciones</a></li>
-            <li><a class="text-xl" href="servicios.html">Servicios</a></li>
-            <li><a class="text-xl" href="entradas.html">Entradas</a></li>
-          </ul>
+        <div class="w-full md:w-[48%]">
+          <img src="img/home/home.png" alt="home" />
         </div>
-      </nav>
-    </header>
-
-    <main>
-      <section class="p-16 flex flex-col gap-10">
-        <article class="flex gap-[2%] flex-col-reverse md:flex-row">
-          <div class="flex flex-col w-full md:w-[48%] gap-4">
-            <h1 class="font-semibold text-[40px] md:text-6xl">
-              Donde la adrenalina no tiene límites
-            </h1>
-            <p class="text-lg">
-              Viví la aventura definitiva en el parque más extremo del país.
-              Montañas rusas vertiginosas, atracciones alucinantes y
-              experiencias inolvidables para todas las edades. ¿Estás listo para
-              desafiar tus límites?
-            </p>
-            <a href="entradas.html">
-              <button
-                class="rounded-[50px] bg-[#AF52DE] w-52 h-10 text-white font-bold cursor-pointer"
-              >
-                Comprar Entradas
-              </button>
-            </a>
-          </div>
-          <div class="w-full md:w-[48%]">
-            <img src="img/home/home.png" alt="home" />
-          </div>
-        </article>
-        <article class="flex flex-col items-center gap-4">
-          <div class="h-[1px] w-full bg-black"></div>
-          <h2 class="font-semibold text-2xl md:text-4xl">
-            Nuestros pasaportes
-          </h2>
-          <div
-            class="w-full flex flex-col md:flex-row justify-between gap-6 md:gap-0"
-          >
-            <div class="flex flex-col gap-2 items-center w-full md:w-[33%]">
-              <img
-                class="w-80 h-72"
-                src="img/home/comboFamiliar.png"
-                alt="comboFamiliar"
-              />
-              <div class="flex flex-col gap-2 w-[60%] items-center">
-                <p class="font-semibold text-lg">Combo Familiar</p>
-                <p class="text-[#4F4F4F] text-center text-base">
-                  ¡Diversión en equipo! Ideal para familias, si adquiere 4
-                  entradas, tendra 1 comida por persona bonificada.
-                </p>
-              </div>
-            </div>
-            <div class="flex flex-col gap-2 items-center w-full md:w-[33%]">
-              <img
-                class="w-80 h-72"
-                src="img/home/duoExplosivo.png"
-                alt="duoExplosivo"
-              />
-              <div class="flex flex-col gap-2 w-[60%] items-center">
-                <p class="font-semibold text-lg">Duo Explosivo</p>
-                <p class="text-[#4F4F4F] text-center text-base">
-                  ¡Entran dos! Comprando 2 entradas tendras acceso sin fila a 3
-                  atracciones a eleccion.
-                </p>
-              </div>
-            </div>
-            <div class="flex flex-col gap-2 items-center w-full md:w-[33%]">
-              <img
-                class="w-80 h-72"
-                src="img/home/fullPass.png"
-                alt="fullPass"
-              />
-              <div class="flex flex-col gap-2 w-[60%] items-center">
-                <p class="font-semibold text-lg">Full Pass Extreme</p>
-                <p class="text-[#4F4F4F] text-center text-base">
-                  ¡Todo, sin límites! Entrada ilimitada a todas las atracciones
-                  + fast pass en las filas con la compra de tu pasaporte full
-                  pass extreme.
-                </p>
-              </div>
-            </div>
-          </div>
-        </article>
-        <article class="flex flex-col items-center gap-4">
-          <div class="h-[1px] w-full bg-black"></div>
-          <h2 class="font-semibold text-2xl md:text-4xl">
-            Nuestras atracciones
-          </h2>
-          <div class="flex flex-col md:flex-row gap-8">
-            <div class="flex flex-col gap-2 items-center">
-              <img
-                class="h-[400px] md:h-[500px]"
-                src="img/home/atraccion1.png"
-                alt="atraccion1"
-              />
-              <p class="text-lg font-semibold">Atracción Principal</p>
-            </div>
-            <div class="flex flex-col gap-2 items-center">
-              <img
-                class="h-[400px] md:h-[500px]"
-                src="img/home/atraccion2.png"
-                alt="atraccion2"
-              />
-              <p class="text-lg font-semibold">Río Loco</p>
-            </div>
-          </div>
-        </article>
-        <article class="flex flex-col items-center gap-4">
-          <div class="h-[1px] w-full bg-black"></div>
-          <h2 class="font-semibold text-2xl md:text-4xl">Nuestros Servicios</h2>
-          <div
-            class="w-full flex flex-col md:flex-row items-center gap-6 md:gap-0 md:justify-between"
-          >
-            <div class="flex flex-col gap-2 items-center w-full md:w-[33%]">
-              <img class="w-8 h-8" src="img/home/car2.png" alt="logoCar" />
-              <div class="flex flex-col gap-2 w-[50%] items-center">
-                <p class="text-lg font-semibold">Estacionamiento</p>
-                <p class="text-[#4F4F4F] text-center text-xs">
-                  Contamos con servicio de estacionamiento con tu entrada.
-                </p>
-              </div>
-            </div>
-            <div class="flex flex-col gap-2 items-center w-full md:w-[33%]">
-              <img class="w-8 h-8" src="img/home/carrito.png" alt="carrito" />
-              <div class="flex flex-col gap-2 w-[50%] items-center">
-                <p class="text-lg font-semibold">Transportes</p>
-                <p class="text-[#4F4F4F] text-center text-xs">
-                  Sillas de ruedas y carritos de bebe disponibles.
-                </p>
-              </div>
-            </div>
-            <div class="flex flex-col gap-2 items-center w-full md:w-[33%]">
-              <img
-                class="w-8 h-8"
-                src="img/home/Hamburguesa.png"
-                alt="restaurantes"
-              />
-              <div class="flex flex-col gap-2 w-[50%] items-center">
-                <p class="text-lg font-semibold">Restaurantes</p>
-                <p class="text-[#4F4F4F] text-center text-xs">
-                  Contamos con diversos restaurantes.
-                </p>
-              </div>
-            </div>
-          </div>
-        </article>
-        <article class="flex flex-col items-center gap-4">
-          <div class="h-[1px] w-full bg-black"></div>
-          <h2 class="font-semibold text-2xl md:text-4xl">Donde Estamos</h2>
-          <div class="flex flex-col md:flex-row gap-6 md:gap-[3%]">
-            <div class="w-full md:w-[70%]">
-              <iframe
-                title="Ubicación del parque"
-                aria-label="Mapa ubicación del parque"
-                class="w-full h-[350px] md:h-[450px]"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2767.709687330461!2d-58.57828462615625!3d-34.417100228285896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca595ecefc923%3A0x539c47415a536b63!2sVertigo%20Xtremo!5e0!3m2!1ses!2sar!4v1750113684501!5m2!1ses!2sar"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
-            <div class="flex flex-col gap-6 w-full md:w-[27%]">
-              <p class="text-lg font-semibold">Encuentranos!</p>
-              <p class="text-lg">
-                Te dejamos nuestra ubicacion en Google Maps para que sea
-                sencillo encontrarnos!
+      </article>
+      <article class="flex flex-col items-center gap-4">
+        <div class="h-[1px] w-full bg-black"></div>
+        <h2 class="font-semibold text-2xl md:text-4xl">
+          Nuestros pasaportes
+        </h2>
+        <div class="w-full flex flex-col md:flex-row justify-between gap-6 md:gap-0">
+          <div class="flex flex-col gap-2 items-center w-full md:w-[33%]">
+            <img class="w-80 h-72" src="img/home/comboFamiliar.png" alt="comboFamiliar" />
+            <div class="flex flex-col gap-2 w-[60%] items-center">
+              <p class="font-semibold text-lg">Combo Familiar</p>
+              <p class="text-[#4F4F4F] text-center text-base">
+                ¡Diversión en equipo! Ideal para familias, si adquiere 4
+                entradas, tendra 1 comida por persona bonificada.
               </p>
             </div>
           </div>
-        </article>
-      </section>
-    </main>
-
-    <section class="flex flex-wrap justify-start gap-10 items-center border-t border-black-800 p-8 m-4 mt-10 md:gap-75">
-        <div class="flex flex-col gap-4">
-            <h5 class="text-lg font-bold">Contactenos</h5>
-            <p>Si te quedo alguna consulta no dudes en escribirnos!</p>
+          <div class="flex flex-col gap-2 items-center w-full md:w-[33%]">
+            <img class="w-80 h-72" src="img/home/duoExplosivo.png" alt="duoExplosivo" />
+            <div class="flex flex-col gap-2 w-[60%] items-center">
+              <p class="font-semibold text-lg">Duo Explosivo</p>
+              <p class="text-[#4F4F4F] text-center text-base">
+                ¡Entran dos! Comprando 2 entradas tendras acceso sin fila a 3
+                atracciones a eleccion.
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-2 items-center w-full md:w-[33%]">
+            <img class="w-80 h-72" src="img/home/fullPass.png" alt="fullPass" />
+            <div class="flex flex-col gap-2 w-[60%] items-center">
+              <p class="font-semibold text-lg">Full Pass Extreme</p>
+              <p class="text-[#4F4F4F] text-center text-base">
+                ¡Todo, sin límites! Entrada ilimitada a todas las atracciones
+                + fast pass en las filas con la compra de tu pasaporte full
+                pass extreme.
+              </p>
+            </div>
+          </div>
         </div>
-        <form class="flex flex-col gap-4">
-            <input type="email" class="border-b border-gray-800 w-100" placeholder="Email" aria-label="Ingrese su email" required>
-            <button type="submit" class="border border-gray-800 w-20 p-1" aria-label="Enviar datos">Enviar</button>
-        </form>
+      </article>
+      <article class="flex flex-col items-center gap-4">
+        <div class="h-[1px] w-full bg-black"></div>
+        <h2 class="font-semibold text-2xl md:text-4xl">
+          Nuestras atracciones
+        </h2>
+        <div class="flex flex-col md:flex-row gap-8">
+          <div class="flex flex-col gap-2 items-center">
+            <img class="h-[400px] md:h-[500px]" src="img/home/atraccion1.png" alt="atraccion1" />
+            <p class="text-lg font-semibold">Atracción Principal</p>
+          </div>
+          <div class="flex flex-col gap-2 items-center">
+            <img class="h-[400px] md:h-[500px]" src="img/home/atraccion2.png" alt="atraccion2" />
+            <p class="text-lg font-semibold">Río Loco</p>
+          </div>
+        </div>
+      </article>
+      <article class="flex flex-col items-center gap-4">
+        <div class="h-[1px] w-full bg-black"></div>
+        <h2 class="font-semibold text-2xl md:text-4xl">Nuestros Servicios</h2>
+        <div class="w-full flex flex-col md:flex-row items-center gap-6 md:gap-0 md:justify-between">
+          <div class="flex flex-col gap-2 items-center w-full md:w-[33%]">
+            <img class="w-8 h-8" src="img/home/car2.png" alt="logoCar" />
+            <div class="flex flex-col gap-2 w-[50%] items-center">
+              <p class="text-lg font-semibold">Estacionamiento</p>
+              <p class="text-[#4F4F4F] text-center text-xs">
+                Contamos con servicio de estacionamiento con tu entrada.
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-2 items-center w-full md:w-[33%]">
+            <img class="w-8 h-8" src="img/home/carrito.png" alt="carrito" />
+            <div class="flex flex-col gap-2 w-[50%] items-center">
+              <p class="text-lg font-semibold">Transportes</p>
+              <p class="text-[#4F4F4F] text-center text-xs">
+                Sillas de ruedas y carritos de bebe disponibles.
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-2 items-center w-full md:w-[33%]">
+            <img class="w-8 h-8" src="img/home/Hamburguesa.png" alt="restaurantes" />
+            <div class="flex flex-col gap-2 w-[50%] items-center">
+              <p class="text-lg font-semibold">Restaurantes</p>
+              <p class="text-[#4F4F4F] text-center text-xs">
+                Contamos con diversos restaurantes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="flex flex-col items-center gap-4">
+        <div class="h-[1px] w-full bg-black"></div>
+        <h2 class="font-semibold text-2xl md:text-4xl">Donde Estamos</h2>
+        <div class="flex flex-col md:flex-row gap-6 md:gap-[3%]">
+          <div class="w-full md:w-[70%]">
+            <iframe title="Ubicación del parque" aria-label="Mapa ubicación del parque"
+              class="w-full h-[350px] md:h-[450px]"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2767.709687330461!2d-58.57828462615625!3d-34.417100228285896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca595ecefc923%3A0x539c47415a536b63!2sVertigo%20Xtremo!5e0!3m2!1ses!2sar!4v1750113684501!5m2!1ses!2sar"
+              style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="flex flex-col gap-6 w-full md:w-[27%]">
+            <p class="text-lg font-semibold">Encuentranos!</p>
+            <p class="text-lg">
+              Te dejamos nuestra ubicacion en Google Maps para que sea
+              sencillo encontrarnos!
+            </p>
+          </div>
+        </div>
+      </article>
     </section>
+    <section class="flex flex-wrap justify-start gap-10 items-center border-t border-black-800 p-8 m-4 mt-10 md:gap-75">
+      <div class="flex flex-col gap-4">
+        <h5 class="text-lg font-bold">Contactános</h5>
+        <p>Si te quedó alguna consulta no dudes en escribirnos!</p>
+      </div>
+      <form class="flex flex-col gap-4">
+        <input type="email" class="border-b border-gray-800 w-100" placeholder="Email" aria-label="Ingrese su email"
+          required>
+        <button type="submit" class="border border-gray-800 w-20 p-1" aria-label="Enviar datos">Enviar</button>
+      </form>
+    </section>
+  </main>
 
-    <footer class="bg-violet-800 text-white flex flex-col justify-center items-center md:flex-row md:justify-between p-3">
-        <p>Proyecto educativo parque temático</p>
-        <p>Diseño y Desarrollo Web (15130) - Grupo 3</p>
-        <img src="img/logo-uade.png" alt="logo universidad" class="w-15">
-    </footer>
+  <footer class="bg-[#AF52DE] text-white p-6">
+    <div class="max-w-6xl mx-auto">
+      <!-- Información principal del proyecto -->
+      <div class="flex flex-col md:flex-row justify-between items-center mb-6">
+        <div class="text-center md:text-left mb-4 md:mb-0">
+          <p class="text-lg font-semibold">Proyecto educativo parque temático</p>
+          <p class="text-sm opacity-90">Diseño y Desarrollo Web (15130) - Grupo 3</p>
+        </div>
+        <img src="img/logo-uade.png" alt="logo universidad" class="w-20 h-auto">
+      </div>
 
-    <script src="js/menu.js"></script>
-    <script src="//code.tidio.co/sjpfzk31xoweatnk7i8k5z4dbbrsfwwq.js" async></script>
-  </body>
+      <!-- Línea divisora -->
+      <div class="h-px bg-white opacity-30 mb-6"></div>
+
+      <!-- Información del equipo -->
+      <div class="flex flex-col lg:flex-row justify-between items-start gap-6">
+        <!-- Integrantes del equipo -->
+        <div class="w-full lg:w-2/3">
+          <h3 class="text-lg font-semibold mb-4 text-center lg:text-left">
+            <i class="fa-solid fa-users mr-2"></i>
+            Integrantes del Equipo
+          </h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div class="flex items-center justify-center lg:justify-start">
+              <i class="fa-solid fa-user-circle mr-2 text-purple-300"></i>
+              <span>Conti Santiago</span>
+            </div>
+            <div class="flex items-center justify-center lg:justify-start">
+              <i class="fa-solid fa-user-circle mr-2 text-purple-300"></i>
+              <span>Espinoza Jesus</span>
+            </div>
+            <div class="flex items-center justify-center lg:justify-start">
+              <i class="fa-solid fa-user-circle mr-2 text-purple-300"></i>
+              <span>Iglesias Martin</span>
+            </div>
+            <div class="flex items-center justify-center lg:justify-start">
+              <i class="fa-solid fa-user-circle mr-2 text-purple-300"></i>
+              <span>Tassone Facundo</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Enlaces del proyecto -->
+        <div class="w-full lg:w-1/3 text-center lg:text-right">
+          <h3 class="text-lg font-semibold mb-4">
+            <i class="fa-solid fa-link mr-2"></i>
+            Enlaces del Proyecto
+          </h3>
+          <div class="flex flex-col gap-3">
+            <a href="https://jesuse99.github.io/primer_entrega_parcial/index.html" target="_blank"
+              class="inline-flex items-center justify-center lg:justify-end hover:text-purple-300 transition-colors duration-200">
+              <i class="fa-solid fa-external-link-alt mr-2"></i>
+              <span>Página del Grupo</span>
+            </a>
+            <div class="text-sm opacity-75">
+              <i class="fa-solid fa-calendar mr-2"></i>
+              <span>Desarrollado en 2025</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer bottom -->
+      <div class="mt-6 pt-4 border-t border-white border-opacity-30 text-center text-sm opacity-75">
+        <p>&copy; 2025 ExtremePark - Todos los derechos reservados | UADE - Diseño y Desarrollo Web</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/menu.js"></script>
+  <script src="//code.tidio.co/sjpfzk31xoweatnk7i8k5z4dbbrsfwwq.js" async></script>
+</body>
+
 </html>
